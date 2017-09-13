@@ -19,7 +19,5 @@ My AMM study (2017, 3 course, 1  semester)
 1. Книга: название, количество страниц, цена. 2. Вычислить среднюю стоимость одной страницы. 3. Увеличить цену книги в два раза, если название начинается со слова "Программирование"
 
 UPD: [Решение на Java](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/java)
-
-UPD: [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/с++)
-
-UPD: [Решение на С#](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/с#)
+UPD: [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/c%2B%2B)
+UPD: [Решение на С#](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/c%23/lab01)
