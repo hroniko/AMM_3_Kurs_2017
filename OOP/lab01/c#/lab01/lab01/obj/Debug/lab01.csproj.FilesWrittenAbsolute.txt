@@ -1,0 +1,5 @@
+/media/hroniko/DATA/AMM_3_kurs_2017/OOP/lab01/c#/lab01/lab01/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/media/hroniko/DATA/AMM_3_kurs_2017/OOP/lab01/c#/lab01/lab01/bin/Debug/lab01.exe.mdb
+/media/hroniko/DATA/AMM_3_kurs_2017/OOP/lab01/c#/lab01/lab01/bin/Debug/lab01.exe
+/media/hroniko/DATA/AMM_3_kurs_2017/OOP/lab01/c#/lab01/lab01/obj/Debug/lab01.exe
+/media/hroniko/DATA/AMM_3_kurs_2017/OOP/lab01/c#/lab01/lab01/obj/Debug/lab01.exe.mdb

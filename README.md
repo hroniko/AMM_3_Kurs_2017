@@ -5,7 +5,7 @@ My AMM study (2017, 3 course, 1  semester)
 
 ### 2017-09-13
 
-### Добавлено решение задачи №1 по ООП (Вариант 13) (Java)(С++)
+### Добавлено решение задачи №1 по ООП (Вариант 13) (Java)(С++)(C#)
 [Задание:](https://github.com/hroniko/AMM_3_Kurs_2017/blob/master/OOP/lab01/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B501.txt)
 
 Создать класс с полями, указанными в индивидуальном задании (табл. 11.2, столб 2).
@@ -19,4 +19,7 @@ My AMM study (2017, 3 course, 1  semester)
 1. Книга: название, количество страниц, цена. 2. Вычислить среднюю стоимость одной страницы. 3. Увеличить цену книги в два раза, если название начинается со слова "Программирование"
 
 UPD: [Решение на Java](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/java)
+
 UPD: [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/с++)
+
+UPD: [Решение на С#](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/с#)
