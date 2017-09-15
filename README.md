@@ -45,20 +45,20 @@ double interpolate2(vector<double> X, vector<double> Y, double xx);
 
 Решение на C++ пока без вывода графиков, не решил еще, какую библиотеку использовать.
 
-UPD: добавил решение на Matlab с выводом графиков.
+####UPD: добавил решение на Matlab с выводом графиков.
 В папке две основные функции: [interpolate1.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/interpolate1.m) и [interpolate2.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/interpolate2.m)
 Сама исходная оригинальная функция, по которой рассчитываются узлы, в файле [f.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/f.m). 
 Чтобы вызвать рассчет интерполяции, зная только границы отрезка и точку x (пусть она = 2.5), необходимо в командной строке матлаба ввести и выполнить:
-```matlab
+```c++
 [Lx, Fx, d] = interpolate1(-1, 3, 2, 2.5)
 ```
 Чтобы вызвать рассчет интерполяции по известным узлам, необходимо в командной строке матлаба сначала сформировать эти узлы, например:
-```matlab
+```c++
 X = [1; 2; 3];
 Y = [-2; 1; 6];
 ```
 а затем уже выполнить по ним интерполяцию для точки x = 2.5:
-```matlab
+```c++
 [Lx, Fx, d] = interpolate2(X, Y, 2.5)
 ```
 Или можно выполнить в командной строке файл [main.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/main.m), в котором все это уже есть с комментариями.
@@ -66,5 +66,5 @@ Y = [-2; 1; 6];
 
 ![Пример графика](https://github.com/hroniko/AMM_3_Kurs_2017/raw/master/NM/Lab01/matlab/figure1.png)
 
-[Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/c%2B%2B)
-[Решение на Matlab](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab)
+UPD: [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/c%2B%2B)
+UPD: [Решение на Matlab](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab)
