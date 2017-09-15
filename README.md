@@ -64,7 +64,7 @@ Y = [-2; 1; 6];
 Или можно выполнить в командной строке файл [main.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/main.m), в котором все это уже есть с комментариями.
 В итоге сформируется новое окно с графиком такого вида:
 
-![Пример графика](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/figure1.png)
+![Пример графика](https://github.com/hroniko/AMM_3_Kurs_2017/raw/master/NM/Lab01/matlab/figure1.png)
 
 [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/c%2B%2B)
 [Решение на Matlab](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab)
