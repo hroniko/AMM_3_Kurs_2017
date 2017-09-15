@@ -1,0 +1,3 @@
+/media/hroniko/DATA/AMM_3_Kurs_2017/NM/La01/c++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/media/hroniko/DATA/AMM_3_Kurs_2017/NM/La01/c++/cmake-build-debug/CMakeFiles/edit_cache.dir
+/media/hroniko/DATA/AMM_3_Kurs_2017/NM/La01/c++/cmake-build-debug/CMakeFiles/c__.dir

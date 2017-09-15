@@ -1,0 +1,2 @@
+Options: 
+CMake: 3.8.2@/media/hroniko/323EFE303EFDECAB/IDEA_LIN/clion-2017.2.2/bin/cmake/bin/cmake
