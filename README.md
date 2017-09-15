@@ -24,18 +24,25 @@ UPD: [Решение на С#](https://github.com/hroniko/AMM_3_Kurs_2017/tree/m
 
 ### 2017-09-15
 ### Добавлено решение задачи №1 по Численным методам (С++)
-[Задание:](https://github.com/hroniko/AMM_3_Kurs_2017/blob/master/NM/lab01/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B501.txt)
-
-Задание (интерполяция полиномом Лагранжа)
+[Задание:](https://github.com/hroniko/AMM_3_Kurs_2017/blob/master/NM/Lab01/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B501.txt)
+(интерполяция полиномом Лагранжа)
 
 1. Написать программу, исходные данные: дан отрезок [a, b] - вводим с клавиатеры,
 и функция, по которой будем считать значения в узлах. Используем многочлен второй степени (3 узла),
 и они равноотстощие на отрезке [a, b]. С помощью двойного цикла запрограммировать вычисление
 многочлена Лагранжа в произволной точке x. --- См. interpolate1
 
+```cpp
+double interpolate1(double a, double b, int size, double xx, func f);
+```
+
 2. Функция f задана таблицей значений. Найти с помощью многочлена Лагранжа L2(x) приближенное значение
 функции в точках x* = 1.5 и x** = 2.5  --- См. interpolate2
 
+```cpp
+double interpolate2(vector<double> X, vector<double> Y, double xx);
+```
+
 Решение на C++ пока без вывода графиков, не решил еще, какую библиотеку использовать.
 
-[Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/lab01/c%2B%2B)
+[Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/c%2B%2B)
