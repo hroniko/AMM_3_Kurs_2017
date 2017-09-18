@@ -1,8 +1,8 @@
 # Материалы за 1 семестр 3 курса ПММ ВГУ "Вечерка"
 
-### 2017-09-13
+### 2017-09-13, UPD 2017-09-18 (Python)
 
-### Добавлено решение задачи №1 по ООП (Вариант 13) (Java)(С++)(C#)
+### Добавлено решение задачи №1 по ООП (Вариант 13) (Java)(С++)(C#)(Python)
 [Задание:](https://github.com/hroniko/AMM_3_Kurs_2017/blob/master/OOP/lab01/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B501.txt)
 
 Создать класс с полями, указанными в индивидуальном задании (табл. 11.2, столб 2).
@@ -18,6 +18,7 @@
 UPD: [Решение на Java](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/java)
 UPD: [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/c%2B%2B)
 UPD: [Решение на С#](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/c%23/lab01)
+UPD: [Решение на Python](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/py)
 
 ### 2017-09-15
 ### Добавлено решение задачи №1 по Численным методам (С++)(Matlab)
