@@ -20,8 +20,8 @@ UPD: [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/
 UPD: [Решение на С#](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/c%23/lab01)
 UPD: [Решение на Python](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/py)
 
-### 2017-09-15
-### Добавлено решение задачи №1 по Численным методам (С++)(Matlab)
+### 2017-09-15, UPD 2017-09-20 (Python on Jupyter Notebook)
+### Добавлено решение задачи №1 по Численным методам (С++)(Matlab)(Jupyter Notebook)
 [Задание:](https://github.com/hroniko/AMM_3_Kurs_2017/blob/master/NM/Lab01/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B501.txt)
 (интерполяция полиномом Лагранжа)
 
@@ -64,8 +64,11 @@ Y = [-2; 1; 6];
 
 ![Пример графика](https://github.com/hroniko/AMM_3_Kurs_2017/raw/master/NM/Lab01/matlab/figure1.png)
 
+#### UPD: добавил решение на Python (Jupyter Notebook) с выводом графиков.
+
 UPD: [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/c%2B%2B)
 UPD: [Решение на Matlab](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab)
+UPD: [Решение на Python](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/py/Lab01.ipynb)
 
 ### 2017-09-17
 
@@ -84,3 +87,11 @@ UPD: [Решение на Matlab](https://github.com/hroniko/AMM_3_Kurs_2017/tre
 1. Комплексное число: действительная (a1) и мнимая (b1) части числа. 2. Вычислить модуль комплексного числа. 3. Найти комплексное число, обратное заданному.
 
 UPD: [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01z/c%2B%2B)
+
+### 2017-09-20
+
+### Добавлено решение задачи №1 по Численным методам (Python)
+
+В папке файл в формате Jupyter Notebook.
+
+UPD: [Решение на Python](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/py/Lab01.ipynb)
