@@ -20,8 +20,8 @@ UPD: [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/
 UPD: [Решение на С#](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/c%23/lab01)
 UPD: [Решение на Python](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/OOP/lab01/py)
 
-### 2017-09-15, UPD 2017-09-20 (Python on Jupyter Notebook)
-### Добавлено решение задачи №1 по Численным методам (С++)(Matlab)(Jupyter Notebook)
+### 2017-09-15, UPD 2017-09-20 (Python), UPD 2017-09-24 (C#)
+### Добавлено решение задачи №1 по Численным методам (С++)(Matlab)(Python)(C#)
 [Задание:](https://github.com/hroniko/AMM_3_Kurs_2017/blob/master/NM/Lab01/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B501.txt)
 (интерполяция полиномом Лагранжа)
 
@@ -62,7 +62,26 @@ Y = [-2; 1; 6];
 Или можно выполнить в командной строке файл [main.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/main.m), в котором все это уже есть с комментариями.
 В итоге сформируется новое окно с графиком такого вида:
 
-![Пример графика](https://github.com/hroniko/AMM_3_Kurs_2017/raw/master/NM/Lab01/matlab/figure1.png)
+![Пример графика](https://github.com/hroniko/AMM_3_Kurs_2017/raw/master/NM/Lab01/matlab/img/figure1.png)
+
+#### UPD: 2017-09-24 добавил к решению на Matlab вывод полного графика функции и графика полинома.
+Все оформлено в отдельную функцию без возвращаемых параметров [interpolate1.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/interpolate1.m), вызов следующего вида (как пример):
+
+```matlab
+interpolate3(a, b, size)
+```
+где a и b - концы отрезка, size - степень полинома Лагранжа.
+Получим окно с графиком:
+![Пример графика](https://github.com/hroniko/AMM_3_Kurs_2017/raw/master/NM/Lab01/matlab/img/figure2.png)
+
+Кроме того, добавил пару функций для расчета абсолютной погрешности: [delta.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/delta.m) и [deltaPlot.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/deltaPlot.m). Первая из них вычисляет погрешность между функцией и полиномом Лагранжа, вторая строит график зависимости погрешности от степени полинома Лагранжа:
+
+```matlab
+deltaPlot(a, b, size1, size2)
+```
+где a и b - концы отрезка, size1 и size2 - начальная и конечная степень полинома Лагранжа.
+Получим окно с графиком:
+![Зависимость погрешности от степени полинома](https://github.com/hroniko/AMM_3_Kurs_2017/raw/master/NM/Lab01/matlab/img/figure3.png)
 
 #### UPD: добавил решение на Python (Jupyter Notebook) с выводом графиков.
 
