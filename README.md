@@ -91,7 +91,7 @@ deltaPlot(a, b, size1, size2)
 Окошко имеет вид:
 
 
-![Пример графика](https://github.com/hroniko/AMM_3_Kurs_2017/raw/master/NM/Lab01/c#/img/figure1.png)
+![Пример графика](https://raw.githubusercontent.com/hroniko/AMM_3_Kurs_2017/master/NM/Lab01/c%23/img/figure1.png)
 
 
 UPD: [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/c%2B%2B)
