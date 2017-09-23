@@ -25,7 +25,7 @@ UPD: [Решение на Python](https://github.com/hroniko/AMM_3_Kurs_2017/tre
 [Задание:](https://github.com/hroniko/AMM_3_Kurs_2017/blob/master/NM/Lab01/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B501.txt)
 (интерполяция полиномом Лагранжа)
 
-1. Написать программу, исходные данные: дан отрезок [a, b] - вводим с клавиатеры,
+1. Написать программу, исходные данные: дан отрезок [a, b] - вводим с клавиатуры,
 и функция, по которой будем считать значения в узлах. Используем многочлен второй степени (3 узла),
 и они равноотстощие на отрезке [a, b]. С помощью двойного цикла запрограммировать вычисление
 многочлена Лагранжа в произволной точке x. --- См. interpolate1
@@ -65,13 +65,14 @@ Y = [-2; 1; 6];
 ![Пример графика](https://github.com/hroniko/AMM_3_Kurs_2017/raw/master/NM/Lab01/matlab/img/figure1.png)
 
 #### UPD: 2017-09-24 добавил к решению на Matlab вывод полного графика функции и графика полинома.
-Все оформлено в отдельную функцию без возвращаемых параметров [interpolate1.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/interpolate1.m), вызов следующего вида (как пример):
+Все оформлено в отдельную функцию без возвращаемых параметров [interpolate3.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/interpolate3.m), вызов следующего вида (как пример):
 
 ```matlab
 interpolate3(a, b, size)
 ```
 где a и b - концы отрезка, size - степень полинома Лагранжа.
 Получим окно с графиком:
+
 ![Пример графика](https://github.com/hroniko/AMM_3_Kurs_2017/raw/master/NM/Lab01/matlab/img/figure2.png)
 
 Кроме того, добавил пару функций для расчета абсолютной погрешности: [delta.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/delta.m) и [deltaPlot.m](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab/deltaPlot.m). Первая из них вычисляет погрешность между функцией и полиномом Лагранжа, вторая строит график зависимости погрешности от степени полинома Лагранжа:
@@ -81,6 +82,7 @@ deltaPlot(a, b, size1, size2)
 ```
 где a и b - концы отрезка, size1 и size2 - начальная и конечная степень полинома Лагранжа.
 Получим окно с графиком:
+
 ![Зависимость погрешности от степени полинома](https://github.com/hroniko/AMM_3_Kurs_2017/raw/master/NM/Lab01/matlab/img/figure3.png)
 
 #### UPD: добавил решение на Python (Jupyter Notebook) с выводом графиков.
@@ -114,3 +116,11 @@ UPD: [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/
 В папке файл в формате Jupyter Notebook.
 
 UPD: [Решение на Python](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/py/Lab01.ipynb)
+
+### 2017-09-24
+
+### Обновлено решение задачи №1 по Численным методам (Matlab)
+
+В папке новые файлы в формате *.m.
+
+UPD: [Решение на Matlab](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab)
