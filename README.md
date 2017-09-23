@@ -87,9 +87,17 @@ deltaPlot(a, b, size1, size2)
 
 #### UPD: добавил решение на Python (Jupyter Notebook) с выводом графиков.
 
+#### UPD: 2017-09-24 добавил [решение](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/c%23/Lab01) на C# на основе [WinForms](https://ru.wikipedia.org/wiki/Windows_Forms) и свободной библиотеки [ZedGraph](http://zedgraph.sourceforge.net/samples.html).
+Окошко имеет вид:
+
+
+![Пример графика](https://github.com/hroniko/AMM_3_Kurs_2017/raw/master/NM/Lab01/c#/img/figure1.png)
+
+
 UPD: [Решение на С++](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/c%2B%2B)
 UPD: [Решение на Matlab](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab)
 UPD: [Решение на Python](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/py/Lab01.ipynb)
+UPD: [Решение на C#](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/c%23/Lab01)
 
 ### 2017-09-17
 
@@ -124,3 +132,11 @@ UPD: [Решение на Python](https://github.com/hroniko/AMM_3_Kurs_2017/tre
 В папке новые файлы в формате *.m.
 
 UPD: [Решение на Matlab](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/matlab)
+
+### 2017-09-24
+
+### Добавлено решение задачи №1 по Численным методам (C#)
+
+Решение на основе WinForms и библиотеки ZedGraph.
+
+UPD: [Решение на C#](https://github.com/hroniko/AMM_3_Kurs_2017/tree/master/NM/Lab01/c%23/Lab01)
