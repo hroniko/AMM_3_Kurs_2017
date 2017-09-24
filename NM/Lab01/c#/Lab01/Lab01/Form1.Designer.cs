@@ -33,8 +33,9 @@
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.btnDraw = new System.Windows.Forms.Button();
-            this.btnAutoMashtab = new System.Windows.Forms.Button();
             this.btnMashtab2 = new System.Windows.Forms.Button();
+            this.btnDelta = new System.Windows.Forms.Button();
+            this.txtDelta = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
@@ -46,8 +47,8 @@
             this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.txtN = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnDelta = new System.Windows.Forms.Button();
-            this.txtDelta = new System.Windows.Forms.TextBox();
+            this.btnAutoMashtab = new System.Windows.Forms.Button();
+            this.btnDraw2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
@@ -99,23 +100,26 @@
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 10.73826F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 89.26174F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 10F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 11F));
             this.tableLayoutPanel2.Controls.Add(this.btnDraw, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.btnAutoMashtab, 1, 1);
             this.tableLayoutPanel2.Controls.Add(this.btnMashtab2, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.btnDelta, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.txtDelta, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.btnDraw2, 1, 5);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(798, 55);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 5;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.83333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.16667F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 56F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 53F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 43F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(160, 276);
+            this.tableLayoutPanel2.RowCount = 7;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50.87719F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 49.12281F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 61F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 58F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 42F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 57F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 11F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(160, 344);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
             // btnDraw
@@ -123,33 +127,43 @@
             this.btnDraw.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnDraw.Location = new System.Drawing.Point(19, 3);
             this.btnDraw.Name = "btnDraw";
-            this.btnDraw.Size = new System.Drawing.Size(127, 57);
+            this.btnDraw.Size = new System.Drawing.Size(126, 52);
             this.btnDraw.TabIndex = 0;
             this.btnDraw.Text = "Построить";
             this.btnDraw.UseVisualStyleBackColor = true;
             this.btnDraw.Click += new System.EventHandler(this.btnDraw_Click);
             // 
-            // btnAutoMashtab
-            // 
-            this.btnAutoMashtab.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnAutoMashtab.Location = new System.Drawing.Point(19, 66);
-            this.btnAutoMashtab.Name = "btnAutoMashtab";
-            this.btnAutoMashtab.Size = new System.Drawing.Size(127, 54);
-            this.btnAutoMashtab.TabIndex = 1;
-            this.btnAutoMashtab.Text = "Масштаб";
-            this.btnAutoMashtab.UseVisualStyleBackColor = true;
-            this.btnAutoMashtab.Click += new System.EventHandler(this.btnAutoMashtab_Click);
-            // 
             // btnMashtab2
             // 
             this.btnMashtab2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMashtab2.Location = new System.Drawing.Point(19, 126);
+            this.btnMashtab2.Location = new System.Drawing.Point(19, 117);
             this.btnMashtab2.Name = "btnMashtab2";
-            this.btnMashtab2.Size = new System.Drawing.Size(127, 50);
+            this.btnMashtab2.Size = new System.Drawing.Size(126, 55);
             this.btnMashtab2.TabIndex = 2;
             this.btnMashtab2.Text = "Масштаб 2";
             this.btnMashtab2.UseVisualStyleBackColor = true;
             this.btnMashtab2.Click += new System.EventHandler(this.btnMashtab2_Click);
+            // 
+            // btnDelta
+            // 
+            this.btnDelta.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDelta.Location = new System.Drawing.Point(19, 178);
+            this.btnDelta.Name = "btnDelta";
+            this.btnDelta.Size = new System.Drawing.Size(126, 52);
+            this.btnDelta.TabIndex = 3;
+            this.btnDelta.Text = "Погрешность:";
+            this.btnDelta.UseVisualStyleBackColor = true;
+            this.btnDelta.Click += new System.EventHandler(this.btnDelta_Click_1);
+            // 
+            // txtDelta
+            // 
+            this.txtDelta.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtDelta.Location = new System.Drawing.Point(19, 236);
+            this.txtDelta.Name = "txtDelta";
+            this.txtDelta.Size = new System.Drawing.Size(126, 26);
+            this.txtDelta.TabIndex = 4;
+            this.txtDelta.Text = " - ";
+            this.txtDelta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // tableLayoutPanel3
             // 
@@ -287,26 +301,27 @@
             this.label3.Text = "n:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // btnDelta
+            // btnAutoMashtab
             // 
-            this.btnDelta.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnDelta.Location = new System.Drawing.Point(19, 182);
-            this.btnDelta.Name = "btnDelta";
-            this.btnDelta.Size = new System.Drawing.Size(127, 47);
-            this.btnDelta.TabIndex = 3;
-            this.btnDelta.Text = "Погрешность:";
-            this.btnDelta.UseVisualStyleBackColor = true;
-            this.btnDelta.Click += new System.EventHandler(this.btnDelta_Click_1);
+            this.btnAutoMashtab.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnAutoMashtab.Location = new System.Drawing.Point(19, 61);
+            this.btnAutoMashtab.Name = "btnAutoMashtab";
+            this.btnAutoMashtab.Size = new System.Drawing.Size(126, 50);
+            this.btnAutoMashtab.TabIndex = 1;
+            this.btnAutoMashtab.Text = "Масштаб";
+            this.btnAutoMashtab.UseVisualStyleBackColor = true;
+            this.btnAutoMashtab.Click += new System.EventHandler(this.btnAutoMashtab_Click);
             // 
-            // txtDelta
+            // btnDraw2
             // 
-            this.txtDelta.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.txtDelta.Location = new System.Drawing.Point(19, 235);
-            this.txtDelta.Name = "txtDelta";
-            this.txtDelta.Size = new System.Drawing.Size(127, 26);
-            this.txtDelta.TabIndex = 4;
-            this.txtDelta.Text = " - ";
-            this.txtDelta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnDraw2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnDraw2.Location = new System.Drawing.Point(19, 278);
+            this.btnDraw2.Name = "btnDraw2";
+            this.btnDraw2.Size = new System.Drawing.Size(126, 51);
+            this.btnDraw2.TabIndex = 5;
+            this.btnDraw2.Text = "Построить 2";
+            this.btnDraw2.UseVisualStyleBackColor = true;
+            this.btnDraw2.Click += new System.EventHandler(this.btnDraw2_Click);
             // 
             // Form1
             // 
@@ -351,10 +366,11 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel7;
         private System.Windows.Forms.TextBox txtN;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btnAutoMashtab;
         private System.Windows.Forms.Button btnMashtab2;
         private System.Windows.Forms.Button btnDelta;
         private System.Windows.Forms.TextBox txtDelta;
+        private System.Windows.Forms.Button btnAutoMashtab;
+        private System.Windows.Forms.Button btnDraw2;
     }
 }
 

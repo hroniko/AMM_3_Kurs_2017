@@ -62,6 +62,35 @@ namespace Lab01
             return sum;
         }
 
+        // Основная функция интерполяции (альтернативная, раздельно считаются числитель и знаменатель)
+        double interpolate2alt(List<double> X, List<double> Y, double xx)
+        {
+            double sum = 0.0; // Сумма-накопитель
+            for (int i = 0; i < X.Count; i++)
+            {
+                double pp = Y[i];
+                for (int j = 0; j < X.Count; j++)
+                {
+                    if (i != j)
+                    {
+                        pp *= (xx - X[j]); // Считаем числитель
+                    }
+                }
+
+                double pd = 1.0;
+                for (int j = 0; j < X.Count; j++)
+                {
+                    if (i != j)
+                    {
+                        pd *= (X[i] - X[j]); // Считаем знаменатель
+                    }
+                }
+
+                sum += pp / pd;
+            }
+            return sum;
+        }
+
         // Вспомогательная функция интерполяции (+ расчет векторов X и Y)
         double interpolate1(double a, double b, int size, double xx)
         {
@@ -88,6 +117,34 @@ namespace Lab01
 
             // И вызываем основную функцию
             return interpolate2(X, Y, xx);
+        }
+
+        // Вспомогательная функция интерполяции (Альтернативная + расчет векторов X и Y)
+        double interpolate1alt(double a, double b, int size, double xx)
+        {
+            // Передаем в функцию границы отрезка a и b, число разбиений (узлов) этого отрезка size
+            // и значение xx, для которого ищем y, а также функция f, для которой это все ищется
+
+            List<double> X = new List<double>(); // Формируем вектор X (пустой)
+            List<double> Y = new List<double>(); // Формируем вектор Y (пустой)
+            double delta = Math.Abs(a - b) / (size - 1); // Находим интервал разбиения
+            X.Add(a); // Начало отрезка
+
+            for (int i = 1; i < size - 1; i++)
+            { // Заполняем вектор X
+                X.Add(X[i - 1] + delta);
+            }
+
+            X.Add(b); // конец отрезка
+
+            for (int i = 0; i < size; i++)
+            { // Заполняем вектор Y
+                Y.Add(f(X[i]));
+            }
+
+
+            // И вызываем основную функцию
+            return interpolate2alt(X, Y, xx);
         }
 
 
@@ -413,6 +470,56 @@ namespace Lab01
             zedGraphControl1.Invalidate();
         }
 
+        // Вспомогательный метод печати графика интерполяционного полинома Лагранжа:
+        private void plotLagrangeAlt(double a, double b, int size, int size2)
+        {
+            // Передаем в функцию границы отрезка a и b, число разбиений (тут уже побольше, чем узлов, раз в 10 побольше) этого отрезка size
+            // и значение xx, для которого ищем y, а также функция f, для которой это все ищется
+            List<double> X = new List<double>(); // Формируем вектор X (пустой)
+            List<double> Y = new List<double>(); // Формируем вектор Y (пустой)
+            double delta = Math.Abs(a - b) / (size - 1); // Находим интервал разбиения
+            X.Add(a); // Начало отрезка
+            //X[0] = a; X[size - 1] = b; // Начало и конец отрезка
+
+            for (int i = 1; i < size - 1; i++)
+            { // Заполняем вектор X
+                X.Add(X[i - 1] + delta);
+            }
+
+            X.Add(b); // конец отрезка
+
+            for (int i = 0; i < size; i++)
+            { // Заполняем вектор Y
+                Y.Add(interpolate1alt(a, b, size2, X[i]));
+            }
+
+            // Получаем панель для рисования:
+            GraphPane pane = zedGraphControl1.GraphPane;
+
+            // Создадим список точек
+            PointPairList list = new PointPairList();
+            for (int i = 0; i < size; i++)
+            { // Заполняем список точек:
+                list.Add(X[i], Y[i]);
+            }
+
+            // Создаем кривую с названием "Полином Лагранжа".
+            LineItem myCurve = pane.AddCurve("Полином Альтер.", list, Color.Brown, SymbolType.None);
+
+            // Используем предустановленный стиль, рисующий кривую в виде штрихпунктирной линии.
+            // myCurve.Line.Style = DashStyle.DashDot;
+
+            // Укажем, что график должен быть сглажен
+            // myCurve.Line.IsSmooth = true;
+
+
+            // Вызываем метод AxisChange (), чтобы обновить данные об осях. 
+            zedGraphControl1.AxisChange();
+
+            // Обновляем график
+            zedGraphControl1.Invalidate();
+        }
+
 
         private void btnAutoMashtab_Click(object sender, EventArgs e)
         {
@@ -465,6 +572,36 @@ namespace Lab01
             // 3
             txtDelta.Text = sum.ToString();
 
+        }
+
+        private void btnDraw2_Click(object sender, EventArgs e)
+        {
+            // 1 Читаем значения полей в соотвествующие переменные:
+            double a = 0.0;
+            Double.TryParse(txtA.Text, out a);
+
+            double b = 0.0;
+            Double.TryParse(txtB.Text, out b);
+
+            int n = 0;
+            int.TryParse(txtN.Text, out n);
+
+            // Получим панель для рисования
+            GraphPane pane = zedGraphControl1.GraphPane;
+
+
+            // Очистим список кривых на тот случай, если до этого сигналы уже были нарисованы
+            pane.CurveList.Clear();
+
+
+            // 2 Печатаем узловые точки через вспомогательный метод:
+            plotPoints(a, b, n + 1);
+
+            // 3 Печатаем график функции на заданном интервале:
+            plotFunction(a, b, n * 100);
+
+            // 4 Печатаем график полинома на заданном интервале:
+            plotLagrangeAlt(a, b, n * 100, n + 1);
         }
     }
 }
