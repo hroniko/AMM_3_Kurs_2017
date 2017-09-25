@@ -10,13 +10,14 @@
 - [CLion 2017.3](https://www.jetbrains.com/clion/) - для C++ проектов
 - [PyCharm 2017.3](https://www.jetbrains.com/pycharm/) - для Python проектов
 - [Rider 2017](https://www.jetbrains.com/rider/) - для кросс-платформенной разработки C# проектов (запуска на линуксе)
+- [MS Visual Studio 2017](https://www.visualstudio.com/ru/downloads) - для разработки C# проектов под Windows
 - [MathWorks Matlab 2017a](https://www.mathworks.com/company/newsroom/mathworks-announces-release-2017a-of-the-matlab-and-simulink-pro.html) - для проектов на MatLab и быстрого прототипирования
 
 
 ### Объектно-ориентированное программирование
-#### [Задача №1 (Вар.13)](./OOP_01.md) *** ([Java](./OOP/lab01/java)) ([С++](./OOP/lab01/c%2B%2B)) ([С#](./OOP/lab01/c%23/lab01)) ([Python](./OOP/lab01/py))
-#### [Задача №1 (Вар.11)](./OOP_01z.md) *** ([С++](./OOP/lab01z/c%2B%2B))
+#### - [Задача №1 (Вар.13)](./OOP_01.md) *** (Java)(С++])(С#)(Python])
+#### - [Задача №1 (Вар.11)](./OOP_01z.md) *** (С++)
 
 
 ### Численные методы
-#### [Лабораторная работа №1](./NM_01.md) *** ([С++](./NM/Lab01/c%2B%2B)) ([Matlab](./NM/Lab01/matlab)) ([Python](./NM/Lab01/py/Lab01.ipynb)) ([C#](./NM/Lab01/c%23/Lab01))
+#### - [Лабораторная работа №1](./NM_01.md) *** (С++)(Matlab)(Python)(C#)
