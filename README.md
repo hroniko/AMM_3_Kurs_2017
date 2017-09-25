@@ -1,6 +1,6 @@
 # <img src="./img/logo_raketa.png" width="24"> Материалы за 1 семестр 3 курса ПММ ВГУ "Вечерка"
 
-#### Используемые инструменты:
+### Используемые инструменты:
 
 - [OS KDE Neon 5.10.90](https://neon.kde.org/download) Developer Edition Git-Unstable 64-bit (основная ОС)
 - [OS Windows 10](https://www.microsoft.com/ru-ru/windows) (вторая ОС, для проектов на .Net)
@@ -15,7 +15,7 @@
 
 
 ### Объектно-ориентированное программирование:
-- [Задача №1 (Вар.13)](./OOP_01.md) *** (Java)(С++])(С#)(Python)
+- [Задача №1 (Вар.13)](./OOP_01.md) *** (Java)(С++)(С#)(Python)
 - [Задача №1 (Вар.11)](./OOP_01z.md) *** (С++)
 
 
