@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/hroniko/AMM_3_Kurs_2017/master/img/logo_raketa.png" width="48"> Материалы за 1 семестр 3 курса ПММ ВГУ "Вечерка"
+# <img src="./img/logo_raketa.png" width="24"> Материалы за 1 семестр 3 курса ПММ ВГУ "Вечерка"
 
 Используемые инструменты:
 
