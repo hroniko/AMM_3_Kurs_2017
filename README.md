@@ -13,10 +13,10 @@
 - [MathWorks Matlab 2017a](https://www.mathworks.com/company/newsroom/mathworks-announces-release-2017a-of-the-matlab-and-simulink-pro.html) - для проектов на MatLab и быстрого прототипирования
 
 
-### <img src="./img/logo_raketa.png" width="24"> Объектно-оринтированное программирование
+### Объектно-оринтированное программирование
 #### [Задача №1 (Вар.13)](./OOP_01.md)
 #### [Задача №1 (Вар.11)](./OOP_01z.md)
 
 
-### <img src="./img/logo_raketa.png" width="24"> Численные методы
+### Численные методы
 #### [Лабораторная работа №1](./NM_01.md)
