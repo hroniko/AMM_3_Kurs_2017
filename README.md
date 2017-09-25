@@ -1,4 +1,5 @@
-![](./img/logo_raketa.png =48x) # Материалы за 1 семестр 3 курса ПММ ВГУ "Вечерка"
+![](https://github.com/hroniko/AMM_3_Kurs_2017/blob/master/img/logo_raketa.png =48x) 
+# Материалы за 1 семестр 3 курса ПММ ВГУ "Вечерка"
 
 Используемые инструменты:
 
