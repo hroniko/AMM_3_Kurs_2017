@@ -7,8 +7,18 @@
 using namespace std;
 
 class Book {
+
+private:
+    string name; // Название
+    int page_count; // Количество страниц
+    double price; // Цена в рублях
+
 public:
-    Book(); // Конструктор по умолчанию
+    Book(){ // Конструктор по умолчанию
+        this->name = "";
+        this->page_count = 0;
+        this->price = 0.0;
+    }
 
     Book(string name, int page_count, double price){ // Конструктор с параметрами
         this->name = name;
@@ -27,23 +37,23 @@ public:
     }
 
     void setName(const string &name) {
-        Book::name = name;
+        this->name = name;
     }
 
     int getPage_count() const {
-        return page_count;
+        return this->page_count;
     }
 
     void setPage_count(int page_count) {
-        Book::page_count = page_count;
+        this->page_count = page_count;
     }
 
     double getPrice() const {
-        return price;
+        return this->price;
     }
 
     void setPrice(double price) {
-        Book::price = price;
+        this->price = price;
     }
 
 
@@ -75,21 +85,25 @@ public:
         std::cout << "     цена: " << this->price << " руб. \n";
     }
 
-
-private:
-    string name = ""; // Название
-    int page_count = 0; // Количество страниц
-    double price = 0.0; // Цена в рублях
-
 };
 
 
 int main() { // Вариант 13
     setlocale(LC_ALL, "rus");
-    // std::cout << "Привет!!!" << std::endl;
+
+    string nameBook;
+    int pageCount;
+    double priceBook;
+
+    std::cout << "Введите название книги: ";
+    std::cin >> nameBook;
+    std::cout << "Введите число страниц: ";
+    std::cin >> pageCount;
+    std::cout << "Введите стоимость книги: ";
+    std::cin >> priceBook;
 
 
-    Book myBook = Book("Программирование это просто", 521, 675.00);
+    Book myBook = Book(nameBook, pageCount, priceBook);
     std::cout << "Стоимость одной страницы: " << myBook.priceOnePage() << " руб." << std::endl;
     myBook.toString();
 
