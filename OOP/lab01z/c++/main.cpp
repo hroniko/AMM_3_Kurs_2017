@@ -25,8 +25,16 @@ using namespace std;
 
 // Класс комплексного числа:
 class Complex {
+
+private:
+    double Re; // Вещественная часть
+    double Im; // Мнимая часть
+
 public:
-    Complex(); // Конструктор по умолчанию
+    Complex(){ // Конструктор по умолчанию
+        this->Re = 0.0;
+        this->Im = 0.0;
+    }
 
     Complex(double Re, double Im){ // Конструктор с параметрами
         this->Re = Re;
@@ -59,18 +67,21 @@ public:
     }
 
 
-private:
-    double Re = 0.0; // Вещественная часть
-    double Im = 0.0; // Мнимая часть
-
 };
 
 // Основная часть программы:
 int main() { // Вариант 11
     setlocale(LC_ALL, "rus");
 
+    double a, b;
+
+    std::cout << "Введите Re: ";
+    std::cin >> a;
+    std::cout << "Введите Im: ";
+    std::cin >> b;
+
     // 1 Формируем новое комплексное число:
-    Complex complex = Complex(1.0, 2.0);
+    Complex complex = Complex(a, b);
     // 2 Выводим информацию о числе:
     complex.info();
     // 3 Вычисляем и печатаем модуль комплексного числа:
@@ -79,6 +90,9 @@ int main() { // Вариант 11
     Complex invComplex = complex.inverse();
     std::cout << "Обратное комплексное число: "; invComplex.info();
     std::cout << "Модуль обратного числа: " << invComplex.module() << std::endl;
+
+    complex.~Complex();
+    invComplex.~Complex();
 
     return 0;
 }
