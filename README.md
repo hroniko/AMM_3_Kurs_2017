@@ -21,5 +21,5 @@
 
 ### Численные методы:
 - [Лабораторная работа №1](./NM_01.md) - интерполяция полиномом Лагранжа *** (С++)(Matlab)(Python)(C#)
-Отчет [Word](https://cloud.mail.ru/public/JRUV/mpLoobjWK) [PDF](https://cloud.mail.ru/public/5dKV/awM2Yxyij)
+- Отчет л.р. №1 [Word](https://cloud.mail.ru/public/JRUV/mpLoobjWK) [PDF](https://cloud.mail.ru/public/5dKV/awM2Yxyij)
 - [Лабораторная работа №2](./NM_02.md) - интерполяция полиномом Ньютона *** (Matlab)(Python)
