@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/lab02.dir/main.cpp.o CMakeFiles/lab02.dir/Time.cpp.o CMakeFiles/lab02.dir/Schedule.cpp.o  -o lab02 

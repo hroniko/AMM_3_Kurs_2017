@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="lab02"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab02">
+				<Option output="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/lab02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab02"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="lab02/fast">
+				<Option output="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/lab02" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 lab02/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/Schedule.cpp">
+			<Option target="lab02"/>
+		</Unit>
+		<Unit filename="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/Schedule.h">
+			<Option target="lab02"/>
+		</Unit>
+		<Unit filename="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/Time.cpp">
+			<Option target="lab02"/>
+		</Unit>
+		<Unit filename="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/Time.h">
+			<Option target="lab02"/>
+		</Unit>
+		<Unit filename="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/main.cpp">
+			<Option target="lab02"/>
+		</Unit>
+		<Unit filename="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02/с++/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
