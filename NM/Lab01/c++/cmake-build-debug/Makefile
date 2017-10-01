@@ -48,10 +48,10 @@ RM = /media/hroniko/323EFE303EFDECAB/IDEA_LIN/clion-2017.2.2/bin/cmake/bin/cmake
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /media/hroniko/DATA/AMM_3_Kurs_2017/NM/La01/c++
+CMAKE_SOURCE_DIR = /media/hroniko/DATA/AMM_3_Kurs_2017/NM/Lab01/c++
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /media/hroniko/DATA/AMM_3_Kurs_2017/NM/La01/c++/cmake-build-debug
+CMAKE_BINARY_DIR = /media/hroniko/DATA/AMM_3_Kurs_2017/NM/Lab01/c++/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/hroniko/DATA/AMM_3_Kurs_2017/NM/La01/c++/cmake-build-debug/CMakeFiles /media/hroniko/DATA/AMM_3_Kurs_2017/NM/La01/c++/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/hroniko/DATA/AMM_3_Kurs_2017/NM/Lab01/c++/cmake-build-debug/CMakeFiles /media/hroniko/DATA/AMM_3_Kurs_2017/NM/Lab01/c++/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /media/hroniko/DATA/AMM_3_Kurs_2017/NM/La01/c++/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /media/hroniko/DATA/AMM_3_Kurs_2017/NM/Lab01/c++/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

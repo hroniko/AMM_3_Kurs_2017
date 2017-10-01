@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="main.css">
+	</head>
+	<body>
+		<h1>Лабораторная работа №1</h1>
+		<h2>Численные исследования сходимости <i>многочлена Лагранжа</i>
+		к приближаемой функции при увеличении степени многочлена.</h2>
+		<h3>Задание:</h3>
+		<p/>1. Написать программу, исходные данные: дан отрезок [a, b] - вводим с клавиатуры,
+		и функция, по которой будем считать значения в узлах. Используем многочлен второй степени (3 узла),
+		и они равноотстощие на отрезке [a, b]. С помощью двойного цикла запрограммировать вычисление
+		многочлена Лагранжа в произволной точке x.</p>
+		<p/>2. Функция f задана таблицей значений. Найти с помощью многочлена Лагранжа L2(x) приближенное значение
+		функции в точках x* = 1.5 и x** = 2.5</p>
+
+
+		a = <input type="text" id="A" size="5" maxlength="15" value="-1" />
+		b = <input type="text" id="B" size="5" maxlength="15" value="2" />
+		n = <input type="text" id="SIZE" size="5" maxlength="15" value="3" />
+
+		<input type="button" name="reload" onclick="reload()" value="Построить" />
+
+		<div id="line_top_x"></div>
+
+        <script src="jquery-3.2.1.min.js"></script>
+		<script src="loader.js"></script>
+		<script src="main.js"></script>
+	</body>
+</html>

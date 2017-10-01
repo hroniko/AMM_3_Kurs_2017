@@ -1,4 +1,4 @@
-# Install script for directory: /media/hroniko/DATA/AMM_3_Kurs_2017/NM/La01/c++
+# Install script for directory: /media/hroniko/DATA/AMM_3_Kurs_2017/NM/Lab01/c++
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/media/hroniko/DATA/AMM_3_Kurs_2017/NM/La01/c++/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/media/hroniko/DATA/AMM_3_Kurs_2017/NM/Lab01/c++/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
