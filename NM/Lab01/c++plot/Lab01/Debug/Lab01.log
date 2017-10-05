@@ -1,0 +1,5 @@
+﻿  Main.cpp
+d:\amm_3_kurs_2017\nm\lab01\c++plot\lab01\main.cpp(161): warning C4018: <: несоответствие типов со знаком и без знака
+d:\amm_3_kurs_2017\nm\lab01\c++plot\lab01\main.cpp(163): warning C4018: <: несоответствие типов со знаком и без знака
+  Lab01.vcxproj -> D:\AMM_3_Kurs_2017\NM\Lab01\c++plot\Debug\Lab01.exe
+  Lab01.vcxproj -> D:\AMM_3_Kurs_2017\NM\Lab01\c++plot\Debug\Lab01.pdb (Partial PDB)
