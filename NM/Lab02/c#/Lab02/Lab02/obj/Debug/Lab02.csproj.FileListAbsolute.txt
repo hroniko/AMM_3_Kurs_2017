@@ -1,0 +1,11 @@
+D:\AMM_3_Kurs_2017\NM\Lab02\c#\Lab02\Lab02\bin\Debug\Lab02.exe.config
+D:\AMM_3_Kurs_2017\NM\Lab02\c#\Lab02\Lab02\bin\Debug\Lab02.exe
+D:\AMM_3_Kurs_2017\NM\Lab02\c#\Lab02\Lab02\bin\Debug\Lab02.pdb
+D:\AMM_3_Kurs_2017\NM\Lab02\c#\Lab02\Lab02\bin\Debug\ZedGraph.dll
+D:\AMM_3_Kurs_2017\NM\Lab02\c#\Lab02\Lab02\obj\Debug\Lab02.csprojResolveAssemblyReference.cache
+D:\AMM_3_Kurs_2017\NM\Lab02\c#\Lab02\Lab02\obj\Debug\Lab02.Properties.Resources.resources
+D:\AMM_3_Kurs_2017\NM\Lab02\c#\Lab02\Lab02\obj\Debug\Lab02.csproj.GenerateResource.Cache
+D:\AMM_3_Kurs_2017\NM\Lab02\c#\Lab02\Lab02\obj\Debug\Lab02.csproj.CoreCompileInputs.cache
+D:\AMM_3_Kurs_2017\NM\Lab02\c#\Lab02\Lab02\obj\Debug\Lab02.exe
+D:\AMM_3_Kurs_2017\NM\Lab02\c#\Lab02\Lab02\obj\Debug\Lab02.pdb
+D:\AMM_3_Kurs_2017\NM\Lab02\c#\Lab02\Lab02\obj\Debug\Lab02.Form1.resources
