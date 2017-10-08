@@ -24,13 +24,21 @@
 - [Лабораторная работа №1](./NM_01.md) - интерполяция полиномом Лагранжа *** (С++)(Matlab)(Python)(C#)(JavaScript)
 - Отчет л.р. №1 [Word](https://cloud.mail.ru/public/JRUV/mpLoobjWK) и [PDF](https://cloud.mail.ru/public/5dKV/awM2Yxyij)
 - [Лабораторная работа №2](./NM_02.md) - интерполяция полиномом Ньютона *** (Matlab)(Python)(C#)
+- Отчет л.р. №2 [Word](https://cloud.mail.ru/public/LBsj/8gCpbQA3L) и [PDF](https://cloud.mail.ru/public/54Hb/Yof4Kxwd2)
 
 
 ### Книги и методички:
 
 #### Численные методы:
 - [Гудович Н.Н. Методичка №1](https://cloud.mail.ru/public/3nsf/EusLapYc2) - интерполяция полиномом Лагранжа, для лаб.раб. №1
+- [Гудович Н.Н. Избранные вопросы курса ЧМ. Выпуск 1. Многочлен Лагранжа](https://cloud.mail.ru/public/FfDD/PFoSywuQg)
+- [Гудович Н.Н. Избранные вопросы курса ЧМ. Выпуск 2. Многочлен Ньютона](https://cloud.mail.ru/public/Mq2C/r5afcFqjT)
 
 #### Объектно-ориентированное программировние:
 - [Чернышов М.К. Методичка №1](https://cloud.mail.ru/public/MHuZ/KoQVWrJGw) - Основы языка C++ с применением ООП. Часть 1
 - [Чернышов М.К. Методичка №2](https://cloud.mail.ru/public/4oma/9qFewBLvP) - Основы языка C++ с применением ООП. Часть 2
+
+#### Теория вероятностей:
+- [Володин. Сборник заданий по теории вероятностей](https://cloud.mail.ru/public/CA2U/vtADJ73wA) - задачник для домашки
+- [Радченко. Теория вероятностей и мат статистика](https://cloud.mail.ru/public/CB7u/J8B8Ggcxt) - наш официальный учебник
+- [Радченко. Теория вероятностей и мат статистика ЧБ](https://cloud.mail.ru/public/8PKn/bfidp5YC5) - другой скан учебника
