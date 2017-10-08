@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab02z/c++/main.cpp
+iostream
+-
+string
+-
+ctime
+-
+
