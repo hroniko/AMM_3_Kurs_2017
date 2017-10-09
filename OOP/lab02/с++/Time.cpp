@@ -13,10 +13,10 @@ using namespace std;
 // Устанавливает текущее время
 Time::Time(){
     time_t seconds = time(NULL);
-    tm* timeinfo = localtime(&seconds);
-    hh = timeinfo->tm_hour;
-    mm = timeinfo->tm_min;
-    ss = timeinfo->tm_sec;
+    tm timeinfo = * localtime(&seconds);
+    hh = timeinfo.tm_hour;
+    mm = timeinfo.tm_min;
+    ss = timeinfo.tm_sec;
 }
 
 // Конструктор с параметрами (реализация):
