@@ -29,4 +29,4 @@ UPD: [Решение на С++](./OOP/lab02z/c%2B%2B/main.cpp)
 
 UPD: [Решение на С++](./OOP/lab02z/c%2B%2B/main.cpp)
 
-#### -------
+-------
