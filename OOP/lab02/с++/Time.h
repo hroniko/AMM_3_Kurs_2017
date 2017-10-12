@@ -33,6 +33,10 @@ public:
     int toSeconds(); // Метод конвертации часов, минут и секунд в количество секунд
     std::string toString(); // Метод конвертации в строку
 
+    int getHH();
+    int getMM();
+    int getSS();
+
 };
 
 

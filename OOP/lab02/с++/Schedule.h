@@ -13,10 +13,10 @@ using namespace std;
 
 // Класс "Расписание", отнаследованный от класса "Время"
 class Schedule : public Time{
-public:
+private:
     int number; // Номер поезда
     std::string direction; // Направление
-
+public:
     Schedule(); // Конструктор по умолчанию
     Schedule(int Num, std::string Dir, int HH, int MM, int SS); // Конструктор с параметрами
 

@@ -12,7 +12,7 @@ using namespace std;
 // Конструктор по умолчанию:
 // реализация с вызовом конструктора по умолчанию для класса Time
 // и дополнительно выставлением собственных полей:
-Schedule::Schedule() : Time() {
+Schedule::Schedule(){
     number = 1;
     direction = "Неизвестно";
 }
@@ -42,7 +42,8 @@ Time Schedule::howMuchTime(Time currentTime) {
     int secBetween = toSeconds() - currentTime.toSeconds();
 
     if (secBetween < 0){
-        return Time(0);
+        int res = (hh * 60 + mm)* 60 + ss + ((24 - currentTime.getHH()) * 60 - currentTime.getMM())*60 - currentTime.getSS();
+        return Time(res);
     } else {
         return Time(secBetween);
     }

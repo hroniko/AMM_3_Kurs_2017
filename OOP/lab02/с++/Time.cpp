@@ -109,3 +109,15 @@ std::string Time::toString() {
     info = info + (ss > 9 ? "" : "0") + std::to_string(ss);
     return info;
 }
+
+int Time::getHH() {
+    return hh;
+}
+
+int Time::getMM() {
+    return mm;
+}
+
+int Time::getSS() {
+    return ss;
+}
