@@ -119,26 +119,26 @@ int main()
     */
 
     // Создаем обычного среднестатистического третьекурсника-хорошиста:
-    Student ivan("Иван", "Иванович", "Иванов", "ПММ", 3, 4);
+    Student *ivan = new Student("Иван", "Иванович", "Иванов", "ПММ", 3, 4);
     // И создаем двух студентов-контрактников третьего курса:
-    ContrStudent petr("Петр", "Петрович", "Петров", "ПММ", 3, 5, 1); // уплатил за контракт, последний параметр 1
-    ContrStudent sidor("Сидор", "Сидорович", "Сидоров", "ФКН", 3, 4, 0); // не уплатил за контракт, последний параметр 0
+    Student *petr = new ContrStudent("Петр", "Петрович", "Петров", "ПММ", 3, 5, 1); // уплатил за контракт, последний параметр 1
+    Student *sidor = new ContrStudent("Сидор", "Сидорович", "Сидоров", "ФКН", 3, 4, 0); // не уплатил за контракт, последний параметр 0
 
     // Выводим информацию о студентах:
-    std::cout << ivan.GetInfo() << "\n";
-    std::cout << petr.GetInfo() << "\n";
-    std::cout << sidor.GetInfo() << "\n";
+    std::cout << (*ivan).GetInfo() << "\n";
+    std::cout << (*petr).GetInfo() << "\n";
+    std::cout << (*sidor).GetInfo() << "\n";
 
     // Применяем к ним метод "Перевести на следующий курс":
     std::cout << "\nПытаемся перевести всех студентов на следующий курс!" << "\n\n";
-    ivan.ToNextCourse();
-    petr.ToNextCourse();
-    sidor.ToNextCourse();
+    (*ivan).ToNextCourse();
+    (*petr).ToNextCourse();
+    (*sidor).ToNextCourse();
 
     // И снова выводим информацию о студентах:
-    std::cout << ivan.GetInfo() << "\n";
-    std::cout << petr.GetInfo() << "\n";
-    std::cout << sidor.GetInfo() << "\n";
+    std::cout << (*ivan).GetInfo() << "\n";
+    std::cout << (*petr).GetInfo() << "\n";
+    std::cout << (*sidor).GetInfo() << "\n";
 
     // system("pause"); // Команда задержки экрана, только для Windows
 
