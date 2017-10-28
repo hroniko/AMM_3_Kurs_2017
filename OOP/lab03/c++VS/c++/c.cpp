@@ -99,30 +99,35 @@ int main()
 	// SetConsoleCP(1251);// установка кодовой страницы win-cp 1251 в поток ввода
 	// SetConsoleOutputCP(1251); // установка кодовой страницы win-cp 1251 в поток вывода
 
-	std::cout << "Введите радиус круга:\n";
-	double rc;
-	std::cin >> rc;
+    std::cout << "Введите радиус круга:\n";
+    double rc;
+    std::cin >> rc;
 
-	std::cout << "Введите внутренний и внешний радиус кольца через пробел:\n";
-	double rr1, rr2;
-	std::cin >> rr1 >> rr2;
+    std::cout << "Введите внутренний и внешний радиус кольца через пробел:\n";
+    double rr1, rr2;
+    std::cin >> rr1 >> rr2;
 
 
-	Circle myCircle(rc);
-	Ring myRing(rr1, rr2);
+    Circle *myCircle = new Circle(rc); // Circle myCircle(rc);
+    Circle *myRing = new Ring(rr1, rr2); // Ring myRing(rr1, rr2);
 
-	std::cout << myCircle.toString() << "\n";
-	std::cout << myRing.toString() << "\n";
+    std::cout << (*myCircle).toString() << "\n";
+    std::cout << (*myRing).toString() << "\n";
 
-	std::cout << "Введите, во сколько раз увеличить круг и кольцо:\n";
-	double x;
-	std::cin >> x;
+    std::cout << "Введите, во сколько раз увеличить круг:\n";
+    double x;
+    std::cin >> x;
 
-	myCircle.Zoom(x);
-	myRing.Zoom(x);
+    (*myCircle).Zoom(x);
 
-	std::cout << myCircle.toString() << "\n";
-	std::cout << myRing.toString() << "\n";
+
+    std::cout << "Введите, во сколько раз увеличить кольцо:\n";
+    std::cin >> x;
+
+    (*myRing).Zoom(x);
+
+    std::cout << (*myCircle).toString() << "\n";
+    std::cout << (*myRing).toString() << "\n";
 
 	system("pause"); // Команда задержки экрана
 
