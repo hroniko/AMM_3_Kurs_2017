@@ -100,21 +100,26 @@ int main()
     std::cin >> rr1 >> rr2;
 
 
-    Circle myCircle(rc);
-    Ring myRing(rr1, rr2);
+    Circle *myCircle = new Circle(rc); // Circle myCircle(rc);
+    Ring *myRing = new Ring(rr1, rr2); // Ring myRing(rr1, rr2);
 
-    std::cout << myCircle.toString() << "\n";
-    std::cout << myRing.toString() << "\n";
+    std::cout << (*myCircle).toString() << "\n";
+    std::cout << (*myRing).toString() << "\n";
 
-    std::cout << "Введите, во сколько раз увеличить круг и кольцо:\n";
+    std::cout << "Введите, во сколько раз увеличить круг:\n";
     double x;
     std::cin >> x;
 
-    myCircle.Zoom(x);
-    myRing.Zoom(x);
+    (*myCircle).Zoom(x);
 
-    std::cout << myCircle.toString() << "\n";
-    std::cout << myRing.toString() << "\n";
+
+    std::cout << "Введите, во сколько раз увеличить кольцо:\n";
+    std::cin >> x;
+
+    (*myRing).Zoom(x);
+
+    std::cout << (*myCircle).toString() << "\n";
+    std::cout << (*myRing).toString() << "\n";
 
     // system("pause"); // Команда задержки экрана - для Windows только
 
