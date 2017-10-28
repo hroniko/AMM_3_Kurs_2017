@@ -29,3 +29,13 @@ UPD: [Решение на С++](./OOP/lab03z/c%2B%2B/main.cpp)
 UPD: [Решение на С++ Visual Studio](./OOP/lab03z/c%2B%2BVS))
 
 -------
+
+
+### 2017-10-28
+#### Обновил решение задачи №3 по ООП (Вариант 6) (С++)
+[Задание:](./OOP/lab03z/%D0%97%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B503.txt)
+
+UPD: [Решение на С++](./OOP/lab03z/c%2B%2B/main.cpp)
+UPD: [Решение на С++ Visual Studio](./OOP/lab03z/c%2B%2BVS))
+
+-------
