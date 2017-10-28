@@ -101,7 +101,7 @@ int main()
 
 
     Circle *myCircle = new Circle(rc); // Circle myCircle(rc);
-    Ring *myRing = new Ring(rr1, rr2); // Ring myRing(rr1, rr2);
+    Circle *myRing = new Ring(rr1, rr2); // Ring myRing(rr1, rr2);
 
     std::cout << (*myCircle).toString() << "\n";
     std::cout << (*myRing).toString() << "\n";
