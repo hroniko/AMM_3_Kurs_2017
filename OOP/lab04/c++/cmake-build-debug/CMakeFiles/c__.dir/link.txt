@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/c__.dir/main.cpp.o CMakeFiles/c__.dir/Time.cpp.o CMakeFiles/c__.dir/Schedule.cpp.o  -o c__ 
