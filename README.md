@@ -29,6 +29,8 @@
 - Отчет л.р. №1 [Word](https://cloud.mail.ru/public/JRUV/mpLoobjWK) и [PDF](https://cloud.mail.ru/public/5dKV/awM2Yxyij)
 - [Лабораторная работа №2](./NM_02.md) - интерполяция полиномом Ньютона *** (Matlab)(Python)(C#)
 - Отчет л.р. №2 [Word](https://cloud.mail.ru/public/LBsj/8gCpbQA3L) и [PDF](https://cloud.mail.ru/public/54Hb/Yof4Kxwd2)
+- [Лабораторная работа №3](./NM_03.md) - аппроксимация методом наименьших квадратов *** (Matlab)
+- Отчет л.р. №3 [Word](https://cloud.mail.ru/public/ACnb/DrHyXCz4Z) и [PDF](https://cloud.mail.ru/public/A9dQ/71yfhWdsH)
 
 
 ### Книги и методички:
