@@ -11,30 +11,30 @@
 				<Option working_dir="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="c__">
@@ -54,10 +54,10 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 c__"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 c__"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="c__/fast">
@@ -77,10 +77,10 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 c__/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 c__/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/c++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
