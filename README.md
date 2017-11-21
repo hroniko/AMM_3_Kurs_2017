@@ -6,9 +6,9 @@
 - [OS Windows 10](https://www.microsoft.com/ru-ru/windows) (вторая ОС, для проектов на .Net)
 - [Python 3.6.2](https://pypi.python.org/pypi) + pip + (numpy scipy pandas sklearn matplotlib eli5 seaborn toolz sciplot xgboost statsmodels pymorphy2 minepy) + Jupyter notebook
 - [Java SE Development Kit 8u144](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
-- [IntelliJ IDEA 2017.3](https://www.jetbrains.com/idea/) - для Java проектов
-- [CLion 2017.3](https://www.jetbrains.com/clion/) - для C++ проектов
-- [PyCharm 2017.3](https://www.jetbrains.com/pycharm/) - для Python проектов
+- [IntelliJ IDEA 2017.2](https://www.jetbrains.com/idea/) - для Java проектов
+- [CLion 2017.2](https://www.jetbrains.com/clion/) - для C++ проектов
+- [PyCharm 2017.2](https://www.jetbrains.com/pycharm/) - для Python проектов
 - [Rider 2017](https://www.jetbrains.com/rider/) - для кросс-платформенной разработки C# проектов (запуска на линуксе)
 - [MS Visual Studio 2017](https://www.visualstudio.com/ru/downloads) - для разработки C# проектов под Windows
 - [MathWorks Matlab 2017a](https://www.mathworks.com/company/newsroom/mathworks-announces-release-2017a-of-the-matlab-and-simulink-pro.html) - для проектов на MatLab и быстрого прототипирования
@@ -41,6 +41,7 @@
 - [Гудович Н.Н. Избранные вопросы курса ЧМ. Выпуск 2. Многочлен Ньютона](https://cloud.mail.ru/public/Mq2C/r5afcFqjT)
 - [Гудович Н.Н. Методичка №2](https://cloud.mail.ru/public/2Esu/c8CQofd2n) - интерполяция полиномом Ньютона, для лаб.раб. №2
 - [Гудович Н.Н. Методичка №3](https://cloud.mail.ru/public/C1jD/AddXDVL8N) - метод наименьших квадратов, для лаб.раб. №3
+- [Гудович Н.Н. Методичка №4](https://cloud.mail.ru/public/FKum/kPAac3XDU) - кубические сплайны, для лаб.раб. №4
 
 #### Объектно-ориентированное программировние:
 - [Чернышов М.К. Методичка №1](https://cloud.mail.ru/public/MHuZ/KoQVWrJGw) - Основы языка C++ с применением ООП. Часть 1
