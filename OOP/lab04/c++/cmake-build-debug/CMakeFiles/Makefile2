@@ -45,10 +45,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /media/hroniko/323EFE303EFDECAB/IDEA_LIN/clion-2017.2.2/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/hroniko/IDEA/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /media/hroniko/323EFE303EFDECAB/IDEA_LIN/clion-2017.2.2/bin/cmake/bin/cmake -E remove -f
+RM = /home/hroniko/IDEA/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =

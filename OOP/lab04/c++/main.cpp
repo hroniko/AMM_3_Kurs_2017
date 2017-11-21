@@ -71,6 +71,28 @@ Schedule * optimizeTime(Schedule * sc1, Schedule * sc2){
     return sc2;
 }
 
+// функця определяет, нужна ли оптимизация
+bool ifItOptimate(Schedule * sc1, Schedule * sc2){
+
+    bool res = true;
+
+    if(minutesBetween(sc1, sc2) < 60L){
+        string before = (*sc2).getInfo(); // Информация о записи до изменения
+
+        (* sc2).setYY((* sc1).getYY());
+        (* sc2).setMM((* sc1).getMM());
+        (* sc2).setDD((* sc1).getDD());
+        (* sc2).setHour((* sc1).getHour());
+        (* sc2).setMinute((* sc1).getMinute() + 60); // Смещаем на 60 минут после
+
+        res = false;
+    }
+
+
+
+    return res;
+}
+
 // Функция добавления новой записи в расписание
 Schedule * addSchedule(Schedule * head, string fName, string lName, string sName, int yy, int mm, int dd, int hour, int minute){
 
@@ -100,17 +122,64 @@ Schedule * addSchedule(Schedule * head, string fName, string lName, string sName
 
     }
 
+
+
     // Иначе нельзя, надо искать место, куда вставить
+    // Но сначала проверим, нужно ли будет оптимизировать (есть ли пересечение с имеющимися записями)
+
+
     Schedule * root = head;
+
+
+
+    bool flag = false; // флаг необходимости оптимизации
+
+
     while ((*root).getNext() != NULL){
+
+
         // cout << (*root).getSurname() << endl;
         // cout << (*new_schedule).getSurname() << endl;
         // cout << minutesBetween(root, new_schedule) << endl;
+        if (!ifItOptimate(root, new_schedule)){
+            if (!flag){
+                cout << "Текущее время занято! Можно выполнить оптимизацию или отменить операцию."<< endl;
+                cout << "Выполнить оптимизацию? (y/n): ";
+
+                string answer = "";
+                cin >> answer;
+
+                if  (answer != "y"){
+                    cout << "вставка отменена" << endl;
+                    return head;
+                }
+                flag = true;
+            }
+
+        }
 
         // Вот тут надо попробовать подвинуть и засунуть:
         Schedule *new_schedule2 = optimizeTime(root, new_schedule);
         if ((minutesBetween(root, new_schedule2) >= 60L) & (minutesBetween(new_schedule2, (*root).getNext()) >= 60L)){
             // нашли место для вставки!
+
+            if (!ifItOptimate(root, new_schedule)){
+                if (!flag){
+                    cout << "Текущее время занято! Можно выполнить оптимизацию или отменить операцию."<< endl;
+                    cout << "Выполнить оптимизацию? (y/n): ";
+
+                    string answer = "";
+                    cin >> answer;
+
+                    if  (answer != "y"){
+                        cout << "вставка отменена" << endl;
+                        return head;
+                    }
+                    flag = true;
+                }
+
+            }
+            // Вставляем:
             (*new_schedule2).setNext((*root).getNext());
             (*root).setNext(new_schedule2);
             return head;
@@ -120,6 +189,18 @@ Schedule * addSchedule(Schedule * head, string fName, string lName, string sName
     }
 
     // И, наконец, если никуда не всунули, то встраиваем в конец:
+    if (!ifItOptimate(root, new_schedule)){
+        cout << "Текущее время занято! Можно выполнить оптимизацию или отменить операцию."<< endl;
+        cout << "Выполнить оптимизацию? (y/n): ";
+
+        string answer = "";
+        cin >> answer;
+
+        if  (answer != "y"){
+            cout << "вставка отменена" << endl;
+            return head;
+        }
+    }
     new_schedule = optimizeTime(root, new_schedule);
     (*root).setNext(new_schedule);
 
@@ -253,9 +334,103 @@ int main()
 
     setlocale(LC_ALL, "Russian");
 
-
-
     Schedule *head = new Schedule("Root", "Root", "Root"); // Корневой элемент
+
+    // Подготавливаем привествнную речь))
+    string hello = "Вас приветствует программа \"Расписание\"\n- для вывода справки введите help \n- для выхода введите exit \n";
+    string help = "Распечатать: print | только для даты: printday | добавить запись: add | удалить: delete \nзагрузить расписание: load | сохранить: save | помощь: help | выход: exit";
+
+
+    string str = ""; // тут будем хранить команды
+
+    cout << hello << endl; // Выводим приветствие
+
+    // cin.ignore(); // Просто читаем Энтер для продолжения работы программы
+
+    // Запускаем бесконечный цикл с выходом по ключевому слову
+    while (true){
+        cout << "> "; // печатаем приглашение для ввода
+        cin >> str;
+        if (str == "exit") break; // если выход, то выходим
+        if (str == "help"){
+            cout << help << endl;
+            cin.ignore(); // Просто читаем Энтер для продолжения работы программы
+            continue; // Пропускаем одну итерацию цикла
+        }
+
+        // иначе продолжаем работать с командами
+
+        if (str == "load"){
+            // подгружаем файл
+            head = readFile(head, "/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/in/in.txt");
+            cout << "Файл расписания успешно загружен!" << endl;
+            cout << help << endl;
+            continue; // Пропускаем одну итерацию цикла
+        }
+
+        if (str == "save"){
+            // сохраняем файл
+            writeFile(head, "/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/out/out.txt");
+            cout << "Файл расписания успешно сохранен!" << endl;
+            continue; // Пропускаем одну итерацию цикла
+        }
+
+        if (str == "print"){
+            // печатаем расисание
+            cout << "Полное расписание:" << endl;
+            printSchedule(head);
+            cout << "конец" << endl;
+            continue; // Пропускаем одну итерацию цикла
+        }
+
+        if (str == "printday"){
+            // печатаем расписание для конкретного дня
+            int yyyy, mm, dd;
+            cout << "Введите интересующую дату в формате YYYY MM DD (разделяя числа пробелом):" << endl;
+            cin >> yyyy >> mm >> dd;
+            printScheduleByDay(head, yyyy, mm, dd);
+            cout << "конец" << endl;
+            continue; // Пропускаем одну итерацию цикла
+        }
+
+        if (str == "add"){
+            // добавляем запись
+            cout << "Для добавления записи введите ФИО через пробел:" << endl;
+            string f_name, l_name, s_name;
+            int yyyy, mm, dd, hh, minuts;
+
+
+            cin >> f_name >> l_name >> s_name;
+            cout << "Введите дату и время записи в формате YYYY MM DD hh min :"<< endl;
+            cin >> yyyy >> mm >> dd >> hh >> minuts;
+
+            head = addSchedule(head, f_name, l_name, s_name, yyyy, mm, dd, hh, minuts);
+            continue; // Пропускаем одну итерацию цикла
+        }
+
+        if (str == "delete"){
+            // удаляем запись
+            cout << "Для удаления записи введите ФИО через пробел:" << endl;
+            string f_name, l_name, s_name;
+            cin >> f_name >> l_name >> s_name;
+
+            head = deleteSchedule(head, f_name, l_name, s_name);
+            continue; // Пропускаем одну итерацию цикла
+        }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
 
 /*
     head = addSchedule(head, "Иван", "Иванович", "Иванов", 2017, 10, 26, 7, 55);
@@ -265,7 +440,7 @@ int main()
 */
     // printSchedule(head);
 
-    head = readFile(head, "/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/in/in.txt");
+/*
 
     printScheduleByDay(head, 2017, 10, 26);
     printScheduleByDay(head, 2017, 10, 27);
@@ -274,7 +449,7 @@ int main()
     printScheduleByDay(head, 2017, 10, 26);
 
     writeFile(head, "/media/hroniko/DATA/AMM_3_Kurs_2017/OOP/lab04/out/out.txt");
-
+*/
     // system("pause"); // Команда задержки экрана, только для Windows
 
     return 0;
