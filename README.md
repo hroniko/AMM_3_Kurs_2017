@@ -31,6 +31,8 @@
 - Отчет л.р. №2 [Word](https://cloud.mail.ru/public/LBsj/8gCpbQA3L) и [PDF](https://cloud.mail.ru/public/54Hb/Yof4Kxwd2)
 - [Лабораторная работа №3](./NM_03.md) - аппроксимация методом наименьших квадратов *** (Matlab)
 - Отчет л.р. №3 [Word](https://cloud.mail.ru/public/ACnb/DrHyXCz4Z) и [PDF](https://cloud.mail.ru/public/A9dQ/71yfhWdsH)
+- [Лабораторная работа №4](./NM_04.md) - приближение функции методом кубических сплайнов *** (Matlab)
+- Отчет л.р. №4 [Word](https://cloud.mail.ru/public/9ok7/ozrmF7Qnm) и [PDF](https://cloud.mail.ru/public/5Pny/ynbZeF6jm)
 
 
 ### Книги и методички:
