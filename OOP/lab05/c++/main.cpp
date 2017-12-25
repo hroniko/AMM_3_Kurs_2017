@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <cmath>
-#include <vector>
 
 using namespace std;
 
@@ -21,11 +20,11 @@ public:
     Animal() {
         Name = "noName";
         Age = 0.0;
-        Sex = 1;
+        Sex = true;
     }
 
     // Конструктор с параметрами
-    Animal(string name, double age=0.0, bool sex=1) {
+    Animal(string name, double age=0.0, bool sex=true) {
         Name = name;
         Age = age;
         Sex = sex;
@@ -85,7 +84,7 @@ public:
     }
 
     // Конструктор с параметрами
-    Tiger(string name, double age=0.0, bool sex=1, int linecount=100 ) : Animal(name, age, sex) {
+    Tiger(string name, double age=0.0, bool sex=true, int linecount=100 ) : Animal(name, age, sex) {
         LineCount = linecount;
     }
 
@@ -104,6 +103,37 @@ public:
 
 };
 
+// Класс Лев (класс-наследник)
+class Lion : public Animal {
+protected:
+    double ManeVolume; // объем гривы
+
+public:
+    // Конструктор по умолчанию, устанавливает нулевые радиусы
+    Lion() {
+        ManeVolume = 0.0;
+        Name = "Лев";
+    }
+
+    // Конструктор с параметрами
+    Lion(string name, double age=0.0, bool sex=true, int manevolume=0.0 ) : Animal(name, age, sex) {
+        ManeVolume = manevolume;
+    }
+
+    double getManeVolume(){
+        return ManeVolume;
+    }
+
+    void setManeVolume(double maneVolume) {
+        ManeVolume = maneVolume;
+    }
+
+    // Метод получения информации о тигре - конвертация в строку
+    string toString() {
+        return "Лев: имя " + Name + ", возраст " + to_string(Age) + ", пол " + (Sex ? "м" : "ж") + ", объем гривы " + to_string(ManeVolume);
+    }
+
+};
 
 // Класс Список животных
 class AnimalList {
@@ -139,6 +169,7 @@ public:
 
     // Функция удаления животных старше 5 лет
     void deleteOld(){
+        cout << "Выполнется попытка удаления животных старше 5 лет..." << endl;
         Animal *root = head;
         while ((*root).getNext() != NULL){
             root = (*root).getNext();
@@ -146,6 +177,7 @@ public:
                 del((*root).getName());
             }
         }
+        cout << "Выполнено" << endl;
     }
 
     // Функция добавления нового животного в список
@@ -191,56 +223,19 @@ public:
 
 
 int main() {
-   // std::cout << "Hello, World!" << std::endl;
 
-/*
-
-    // Создание вектора, содержащего целые числа
-    std::vector<Animal> v;
-
-    // Добавление ещё двух целых чисел в вектор
-    Animal *a1 = new Animal("Животное 1");
-    Animal *a2 = new Animal("Животное 2");
-    Animal *a3 = new Tiger("Кусучий");
-
-    v.push_back(*a1);
-    v.push_back(*a2);
-    v.push_back(*a3);
-
-
-
-
-    // Проход по вектору с выводом значений
-    for ( Animal animal : v ) {
-        std::cout << animal.toString() << '\n';
-    }
-
-
-    std::cout << (*a3).toString() << std::endl;
-    std::cout << v.back().toString() << std::endl;
-
-
-
-
-    a1->setNext(a2);
-    a2->setNext(a3);
-
-    while ((*a1).getNext() != NULL){
-        a1 = (*a1).getNext();
-        cout << (*a1).toString() << endl;
-    }
-
-*/
     AnimalList *list = new AnimalList();
 
 
     Animal *a1 = new Animal("Животное 1", 6, true);
     Animal *a2 = new Animal("Животное 2", 4, false);
-    Animal *a3 = new Tiger("Кусачий", 3, true, 250);
+    Animal *a3 = new Tiger("Кусачий", 7, true, 250);
+    Animal *a4 = new Lion("Беззубый", 4, true, 12.5);
 
     list->add(a1);
     list->add(a2);
     list->add(a3);
+    list->add(a4);
 
 
     list->print();
